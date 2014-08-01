@@ -1,0 +1,759 @@
+2014-08-01 13:44:20,028 [FileSystemWatcher: files=#238 cl=java.net.URLClassLoader@7220b722] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at org.codehaus.groovy.grails.web.mapping.RegexUrlMapping.convertToRegex(RegexUrlMapping.java:169)
+	at org.codehaus.groovy.grails.web.mapping.RegexUrlMapping.parse(RegexUrlMapping.java:119)
+	at org.codehaus.groovy.grails.web.mapping.RegexUrlMapping.<init>(RegexUrlMapping.java:92)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.createURLMapping(DefaultUrlMappingEvaluator.java:629)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.getURLMappingForNamedArgs(DefaultUrlMappingEvaluator.java:547)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder._invoke(DefaultUrlMappingEvaluator.java:418)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.invokeMethodClosure(DefaultUrlMappingEvaluator.java:332)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.invokeMethod(DefaultUrlMappingEvaluator.java:322)
+	at groovy.lang.MetaClassImpl.invokeMethodOnGroovyObject(MetaClassImpl.java:1147)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReloadedTypeInvoker$2.invoke(ReloadedTypeInvoker.java:122)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1288)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1082)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at UrlMappings$__clinit__closure1.call(UrlMappings.groovy)
+	at groovy.lang.Closure.call(Closure.java:425)
+	at UrlMappings$__clinit__closure1.call(UrlMappings.groovy)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator.evaluateMappings(DefaultUrlMappingEvaluator.java:160)
+	at org.codehaus.groovy.grails.web.mapping.UrlMappingsHolderFactoryBean.afterPropertiesSet(UrlMappingsHolderFactoryBean.java:91)
+	at org.springframework.beans.factory.InitializingBean$afterPropertiesSet$0.call(Unknown Source)
+	at org.codehaus.groovy.grails.plugins.web.mapping.UrlMappingsGrailsPlugin.createUrlMappingsHolder(UrlMappingsGrailsPlugin.groovy:164)
+	at org.codehaus.groovy.grails.plugins.web.mapping.UrlMappingsGrailsPlugin.this$2$createUrlMappingsHolder(UrlMappingsGrailsPlugin.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1265)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1082)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at org.codehaus.groovy.grails.plugins.web.mapping.UrlMappingsGrailsPlugin$_closure3.doCall(UrlMappingsGrailsPlugin.groovy:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1265)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1082)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.invokeOnChangeListener(DefaultGrailsPlugin.java:768)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:717)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:732)
+	at org.codehaus.groovy.grails.plugins.AbstractGrailsPluginManager.informOfClassChange(AbstractGrailsPluginManager.java:407)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher$2.run(GrailsProjectWatcher.java:257)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.firePendingClassChangeEvents(GrailsProjectWatcher.java:124)
+	at org.codehaus.groovy.grails.cli.agent.GrailsPluginManagerReloadPlugin.reloadEvent(GrailsPluginManagerReloadPlugin.java:42)
+	at org.springsource.loaded.TypeRegistry.fireReloadEvent(TypeRegistry.java:1641)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:808)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:218)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:205)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	at org.codehaus.groovy.grails.web.mapping.RegexUrlMapping.convertToRegex(RegexUrlMapping.java:166)
+	... 77 more
+2014-08-01 13:44:20,031 [FileSystemWatcher: files=#238 cl=java.net.URLClassLoader@7220b722] ERROR StackTrace  - Full Stack Trace:
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	at org.codehaus.groovy.grails.web.mapping.RegexUrlMapping.convertToRegex(RegexUrlMapping.java:166)
+	at org.codehaus.groovy.grails.web.mapping.RegexUrlMapping.parse(RegexUrlMapping.java:119)
+	at org.codehaus.groovy.grails.web.mapping.RegexUrlMapping.<init>(RegexUrlMapping.java:92)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.createURLMapping(DefaultUrlMappingEvaluator.java:629)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.getURLMappingForNamedArgs(DefaultUrlMappingEvaluator.java:547)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder._invoke(DefaultUrlMappingEvaluator.java:418)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.invokeMethodClosure(DefaultUrlMappingEvaluator.java:332)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator$UrlMappingBuilder.invokeMethod(DefaultUrlMappingEvaluator.java:322)
+	at groovy.lang.MetaClassImpl.invokeMethodOnGroovyObject(MetaClassImpl.java:1147)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReloadedTypeInvoker$2.invoke(ReloadedTypeInvoker.java:122)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1288)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1082)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at UrlMappings$__clinit__closure1.call(UrlMappings.groovy)
+	at groovy.lang.Closure.call(Closure.java:425)
+	at UrlMappings$__clinit__closure1.call(UrlMappings.groovy)
+	at org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator.evaluateMappings(DefaultUrlMappingEvaluator.java:160)
+	at org.codehaus.groovy.grails.web.mapping.UrlMappingsHolderFactoryBean.afterPropertiesSet(UrlMappingsHolderFactoryBean.java:91)
+	at org.springframework.beans.factory.InitializingBean$afterPropertiesSet$0.call(Unknown Source)
+	at org.codehaus.groovy.grails.plugins.web.mapping.UrlMappingsGrailsPlugin.createUrlMappingsHolder(UrlMappingsGrailsPlugin.groovy:164)
+	at org.codehaus.groovy.grails.plugins.web.mapping.UrlMappingsGrailsPlugin.this$2$createUrlMappingsHolder(UrlMappingsGrailsPlugin.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1265)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1082)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at org.codehaus.groovy.grails.plugins.web.mapping.UrlMappingsGrailsPlugin$_closure3.doCall(UrlMappingsGrailsPlugin.groovy:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1265)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1082)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1106)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:906)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.invokeOnChangeListener(DefaultGrailsPlugin.java:768)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:717)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:732)
+	at org.codehaus.groovy.grails.plugins.AbstractGrailsPluginManager.informOfClassChange(AbstractGrailsPluginManager.java:407)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher$2.run(GrailsProjectWatcher.java:257)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.firePendingClassChangeEvents(GrailsProjectWatcher.java:124)
+	at org.codehaus.groovy.grails.cli.agent.GrailsPluginManagerReloadPlugin.reloadEvent(GrailsPluginManagerReloadPlugin.java:42)
+	at org.springsource.loaded.TypeRegistry.fireReloadEvent(TypeRegistry.java:1641)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:808)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:218)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:205)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:44:20,032 [FileSystemWatcher: files=#238 cl=java.net.URLClassLoader@7220b722] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:20,032 [FileSystemWatcher: files=#238 cl=java.net.URLClassLoader@7220b722] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:20,032 [FileSystemWatcher: files=#238 cl=java.net.URLClassLoader@7220b722] ERROR StackTrace  - Full Stack Trace:
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:44:20,032 [FileSystemWatcher: files=#238 cl=java.net.URLClassLoader@7220b722] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:22,868 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:311)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:206)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:152)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:22,877 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:22,878 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:44:22,878 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:25,548 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:311)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:206)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:152)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:25,548 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:25,548 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:44:25,549 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:26,739 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:311)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:206)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:152)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:26,739 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:26,740 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:44:26,740 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:41,871 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:311)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:206)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:152)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:41,871 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:44:41,871 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:44:41,871 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error evaluating mapping for pattern [^/.**/??$] from Grails URL mappings: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at UrlMappings$__clinit__closure1$$EOli4D2M.doCall(UrlMappings.groovy:4)
+	... 1 more
+Caused by: java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 4
+^/.**/??$
+    ^
+	at java.util.regex.Pattern.error(Pattern.java:1713)
+	at java.util.regex.Pattern.sequence(Pattern.java:1878)
+	at java.util.regex.Pattern.expr(Pattern.java:1752)
+	at java.util.regex.Pattern.compile(Pattern.java:1460)
+	at java.util.regex.Pattern.<init>(Pattern.java:1133)
+	at java.util.regex.Pattern.compile(Pattern.java:823)
+	... 2 more
+2014-08-01 13:58:58,236 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.io.FileNotFoundException: C:\Users\zwright\.grails\2.2.4\projects\transmartDown\tomcat\work\Tomcat\localhost\transmartDown\grails-resources\images\tranSMARTLogo.png (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at org.codehaus.groovy.runtime.ResourceGroovyMethods.newInputStream(ResourceGroovyMethods.java:1811)
+	at org.codehaus.groovy.runtime.dgm$795.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.grails.plugin.resource.ResourceMeta.newInputStream(ResourceMeta.groovy:209)
+	at org.grails.plugin.resource.ResourceMeta$newInputStream.call(Unknown Source)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:292)
+	at org.grails.plugin.resource.ResourceProcessor$processModernResource.call(Unknown Source)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:58:58,236 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.io.FileNotFoundException: C:\Users\zwright\.grails\2.2.4\projects\transmartDown\tomcat\work\Tomcat\localhost\transmartDown\grails-resources\images\tranSMARTLogo.png (The system cannot find the path specified)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at org.grails.plugin.resource.ResourceMeta.newInputStream(ResourceMeta.groovy:209)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:292)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:59:01,128 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.io.FileNotFoundException: C:\Users\zwright\.grails\2.2.4\projects\transmartDown\tomcat\work\Tomcat\localhost\transmartDown\grails-resources\images\tranSMARTLogo.png (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at org.codehaus.groovy.runtime.ResourceGroovyMethods.newInputStream(ResourceGroovyMethods.java:1811)
+	at org.codehaus.groovy.runtime.dgm$795.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.grails.plugin.resource.ResourceMeta.newInputStream(ResourceMeta.groovy:209)
+	at org.grails.plugin.resource.ResourceMeta$newInputStream.call(Unknown Source)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:292)
+	at org.grails.plugin.resource.ResourceProcessor$processModernResource.call(Unknown Source)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+2014-08-01 13:59:01,128 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.io.FileNotFoundException: C:\Users\zwright\.grails\2.2.4\projects\transmartDown\tomcat\work\Tomcat\localhost\transmartDown\grails-resources\images\tranSMARTLogo.png (The system cannot find the path specified)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at org.grails.plugin.resource.ResourceMeta.newInputStream(ResourceMeta.groovy:209)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:292)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
