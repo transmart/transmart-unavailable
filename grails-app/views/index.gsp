@@ -94,6 +94,7 @@
 		<p><img src="${resource(dir: 'images', file: 'tranSMARTLogo.png')}" alt="tranSMART v1.2"/></p>
 		<h2>This site is temporarily unavailable. <br/>
 Please check back later.</h2>
+       <p>Questions? Contact the <br /> <a href="mailto:webadmin@transmartfoundation.org">web adminstrator(s)</a> at <br /> tranSMART Foundation.</p>
 		</div>
 	</body>
 </html>
